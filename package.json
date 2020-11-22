@@ -1,0 +1,31 @@
+{
+    "name": "r-maple",
+    "version": "0.0.1",
+    "source": "src/index.ts",
+    "main": "dist/index.js",
+    "scripts": {
+        "build": "microbundle --jsx React.createElement",
+        "start": "parcel demo/index.html -d build"
+    },
+    "devDependencies": {
+        "@types/react": "^17.0.0",
+        "@types/react-dom": "^17.0.0",
+        "@types/react-transition-group": "^4.4.0",
+        "microbundle": "^0.12.4",
+        "parcel-bundler": "^1.12.4",
+        "react": "^17.0.1",
+        "react-dom": "^17.0.1",
+        "sass": "^1.29.0",
+        "typescript": "^4.1.2"
+    },
+    "dependencies": {
+        "@fortawesome/fontawesome-svg-core": "^1.2.32",
+        "@fortawesome/free-solid-svg-icons": "^5.15.1",
+        "@fortawesome/react-fontawesome": "^0.1.12",
+        "r-orchid": "^0.0.19",
+        "react-transition-group": "^4.4.1"
+    },
+    "peerDependencies": {
+        "react": "^17.0.1"
+    }
+}

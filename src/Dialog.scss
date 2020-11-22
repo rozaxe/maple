@@ -1,0 +1,54 @@
+$duration-in: 250ms;
+$duration-out: 150ms;
+
+.or-transition-dialog-enter {
+    &.or-overlay--backdrop {
+      opacity: 0;
+    }
+  
+    & > .or-dialog--padded {
+      opacity: 0;
+      transform: scale(0.8);
+    }
+  }
+  
+  .or-transition-dialog-enter-active {
+    &.or-overlay--backdrop {
+      opacity: 1;
+      transition: opacity $duration-in ease-out;
+    }
+  
+    & > .or-dialog--padded {
+      opacity: 1;
+      transform: scale(1);
+      transition-property: opacity transform;
+      transition-duration: $duration-in;
+      transition-timing-function: ease-out;
+    }
+  }
+  
+  .or-transition-dialog-exit {
+    &.or-overlay--backdrop {
+      opacity: 1;
+    }
+  
+    & > .or-dialog--padded {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+  .or-transition-dialog-exit-active {
+    &.or-overlay--backdrop {
+      opacity: 0;
+      transition: opacity $duration-out ease-out;
+    }
+  
+    & > .or-dialog--padded {
+      opacity: 0;
+      transform: scale(0.8);
+      transition-property: opacity transform;
+      transition-duration: $duration-out;
+      transition-timing-function: ease-out;
+    }
+  }
