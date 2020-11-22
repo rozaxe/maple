@@ -3,6 +3,10 @@
     "version": "0.0.1",
     "source": "src/index.ts",
     "main": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "files": [
+        "dist"
+    ],
     "scripts": {
         "build": "microbundle --jsx React.createElement",
         "start": "parcel demo/index.html -d build"
