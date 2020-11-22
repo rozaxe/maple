@@ -6,7 +6,7 @@ import './Dialog.scss'
 
 type DialogProps = {
     isOpen: boolean
-    children: JSX.Element
+    children: React.ReactNode
     onClose?: () => void
     canClose?: boolean
     className?: string
