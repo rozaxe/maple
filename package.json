@@ -8,7 +8,7 @@
         "dist"
     ],
     "scripts": {
-        "build": "microbundle --jsx React.createElement",
+        "build": "microbundle --jsx React.createElement --css-modules false",
         "start": "parcel demo/index.html -d build"
     },
     "devDependencies": {
