@@ -2,10 +2,10 @@
     "name": "r-maple",
     "version": "0.0.4",
     "source": "src/index.ts",
-    "main": "dist/index.js",
-    "types": "dist/index.d.ts",
+    "main": "lib/index.js",
+    "types": "lib/index.d.ts",
     "files": [
-        "dist"
+        "lib"
     ],
     "scripts": {
         "build": "microbundle --jsx React.createElement --css-modules false",
@@ -26,7 +26,7 @@
         "@fortawesome/fontawesome-svg-core": "^1.2.32",
         "@fortawesome/free-solid-svg-icons": "^5.15.1",
         "@fortawesome/react-fontawesome": "^0.1.12",
-        "r-orchid": "^0.0.19",
+        "r-orchid": "^0.3.0",
         "react-transition-group": "^4.4.1"
     },
     "peerDependencies": {
