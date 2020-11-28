@@ -1,6 +1,6 @@
 {
     "name": "r-maple",
-    "version": "0.0.4",
+    "version": "0.1.0",
     "source": "src/index.ts",
     "main": "lib/index.js",
     "types": "lib/index.d.ts",
