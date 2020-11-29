@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Dialog } from '../src/index'
+import { Dialog, Spinner } from '../src/index'
 
 export default function App() {
     const [isOpen, setIsOpen] = useState(true)
@@ -10,6 +10,7 @@ export default function App() {
             <Dialog isOpen={isOpen} className="w-8/12g" onClose={() => setIsOpen(false)}>
                 <div>Hello</div>
             </Dialog>
+            <Spinner />
         </div>
     )
 }
