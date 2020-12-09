@@ -1,7 +1,8 @@
 import React, { Fragment } from 'react'
 import { useObservable } from 'r-use-observable'
-import { Dialog, Button } from '../index'
 import { WindowService } from './WindowService'
+import { Dialog } from '../Dialog'
+import { Button } from '../Button'
 
 export function Window() {
     const isOpen = useObservable(WindowService.getIsOpen$, null)
