@@ -2,7 +2,7 @@ import { AnimatePresence, motion } from "framer-motion"
 import { useObservable } from "r-use-observable"
 import React from "react"
 import { Toast } from "./Toast"
-import ToasterService from "./ToasterService"
+import { ToasterService } from "./ToasterService"
 
 type ToasterProps = {
     className?: string

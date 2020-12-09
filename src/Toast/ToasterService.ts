@@ -11,7 +11,7 @@ type Toast = {
     intent: Intent
 }
 
-class ToasterService {
+class ToasterServiceImpl {
     private toasts$ = new BehaviorSubject<Toast[]>([])
 
     getToasts$ = (): Observable<Toast[]> => {
@@ -44,4 +44,4 @@ class ToasterService {
     }
 }
 
-export default new ToasterService()
+export const ToasterService = new ToasterServiceImpl()
