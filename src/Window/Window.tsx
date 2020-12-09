@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react'
+import React from 'react'
 import { useObservable } from 'r-use-observable'
 import { WindowService } from './WindowService'
 import { Dialog } from '../Dialog'
